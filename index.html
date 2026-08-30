@@ -13,7 +13,7 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap"
     rel="stylesheet">
 
-<!-- Favicon -->
+<!-- FAVICON -->
 <link rel="icon" type="image/png" href="imagens/logo-alto-dos-ipes.png">
 
 <style>
@@ -255,7 +255,7 @@
         box-shadow: 0 8px 24px rgba(201, 168, 76, 0.4);
     }
 
-    /* Indicador de rolagem */
+    /* ──── INDICADOR DE ROLAGEM ──── */
 
     .scroll-indicator {
         position: absolute;
@@ -438,10 +438,6 @@
         margin-top: 60px;
     }
 
-    .diferencial-card:last-child:nth-child(3n + 2) {
-        grid-column: 2 / 3;
-    }
-
     .diferencial-card {
         background: var(--branco);
         padding: 40px 35px;
@@ -546,8 +542,8 @@
         background: var(--creme-escuro);
         height: 400px;
         border-radius: 2px;
-        overflow: hidden;
         border: 1px solid var(--dourado);
+        overflow: hidden;
     }
 
     .localizacao-mapa iframe {
@@ -618,6 +614,8 @@
         color: rgba(255, 255, 255, 0.75);
         font-size: 14px;
     }
+
+    /* ──── FORMULÁRIO ──── */
 
     .form-wrapper {
         background: var(--creme);
@@ -761,10 +759,6 @@
             grid-template-columns: 1fr;
         }
 
-        .diferencial-card:last-child:nth-child(3n + 2) {
-            grid-column: auto;
-        }
-
         .numeros {
             gap: 0;
             padding: 40px 20px;
@@ -821,33 +815,61 @@
 <body>
 
 ```
-<!-- NAVBAR -->
+<!-- ──── NAVBAR ──── -->
+
 <nav>
+
     <div class="nav-logo">
         Alto dos <span>Ipês</span>
     </div>
 
     <ul class="nav-links">
-        <li><a href="#sobre">O Loteamento</a></li>
-        <li><a href="#diferenciais">Diferenciais</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#localizacao">Localização</a></li>
+
+        <li>
+            <a href="#sobre">
+                O Loteamento
+            </a>
+        </li>
+
+        <li>
+            <a href="#diferenciais">
+                Diferenciais
+            </a>
+        </li>
+
+        <li>
+            <a href="#galeria">
+                Galeria
+            </a>
+        </li>
+
+        <li>
+            <a href="#localizacao">
+                Localização
+            </a>
+        </li>
 
         <li>
             <a
                 href="https://wa.me/5562981205920?text=Olá!%20Tenho%20interesse%20no%20loteamento%20Alto%20dos%20Ipês%20e%20gostaria%20de%20mais%20informações."
                 target="_blank"
+                rel="noopener noreferrer"
                 class="nav-cta">
                 Quer se Cadastrar?
             </a>
         </li>
+
     </ul>
+
 </nav>
 
-<!-- HERO -->
+
+<!-- ──── HERO ──── -->
+
 <section class="hero">
 
     <div class="hero-bg"></div>
+
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
@@ -867,9 +889,9 @@
         <div class="hero-divider"></div>
 
         <p class="hero-desc">
-            Um empreendimento cuidadosamente planejado para oferecer
-            qualidade de vida, tranquilidade e um espaço especial para
-            você construir o seu futuro.
+            Um empreendimento cuidadosamente planejado, onde natureza,
+            tranquilidade e qualidade de vida se encontram para oferecer
+            um espaço especial para construir o seu futuro.
         </p>
 
         <div class="hero-buttons">
@@ -877,10 +899,9 @@
             <a
                 href="https://wa.me/5562981205920?text=Olá!%20Tenho%20interesse%20no%20loteamento%20Alto%20dos%20Ipês%20e%20gostaria%20de%20mais%20informações."
                 target="_blank"
+                rel="noopener noreferrer"
                 class="btn-primary">
-
                 Quer se Cadastrar? 💬
-
             </a>
 
         </div>
@@ -894,27 +915,54 @@
 
 </section>
 
-<!-- NÚMEROS -->
+
+<!-- ──── NÚMEROS ──── -->
+
 <section class="numeros">
 
     <div class="numero-item">
-        <div class="numero-valor">117</div>
-        <div class="numero-label">Lotes disponíveis</div>
+
+        <div class="numero-valor">
+            117
+        </div>
+
+        <div class="numero-label">
+            Lotes disponíveis
+        </div>
+
     </div>
 
-    <div class="numero-item">
-        <div class="numero-valor">236m²</div>
-        <div class="numero-label">Área mínima por lote</div>
-    </div>
 
     <div class="numero-item">
-        <div class="numero-valor">4,84ha</div>
-        <div class="numero-label">Área total do projeto</div>
+
+        <div class="numero-valor">
+            236m²
+        </div>
+
+        <div class="numero-label">
+            Área mínima por lote
+        </div>
+
+    </div>
+
+
+    <div class="numero-item">
+
+        <div class="numero-valor">
+            4,84ha
+        </div>
+
+        <div class="numero-label">
+            Área total do projeto
+        </div>
+
     </div>
 
 </section>
 
-<!-- SOBRE -->
+
+<!-- ──── SOBRE ──── -->
+
 <section class="section" id="sobre">
 
     <div class="sobre-grid">
@@ -926,6 +974,7 @@
                 alt="Vista do loteamento Alto dos Ipês">
 
         </div>
+
 
         <div class="sobre-texto">
 
@@ -942,8 +991,8 @@
             <p class="section-text">
                 O Alto dos Ipês é um loteamento residencial desenvolvido
                 com planejamento e organização, pensado para proporcionar
-                qualidade de vida e criar um ambiente agradável para as
-                futuras famílias.
+                qualidade de vida e um ambiente agradável para as futuras
+                famílias.
             </p>
 
             <br>
@@ -960,10 +1009,9 @@
             <a
                 href="https://wa.me/5562981205920?text=Olá!%20Tenho%20interesse%20no%20loteamento%20Alto%20dos%20Ipês%20e%20gostaria%20de%20mais%20informações."
                 target="_blank"
+                rel="noopener noreferrer"
                 class="btn-primary">
-
                 Quer se Cadastrar? 💬
-
             </a>
 
         </div>
@@ -972,7 +1020,9 @@
 
 </section>
 
-<!-- DIFERENCIAIS -->
+
+<!-- ──── DIFERENCIAIS ──── -->
+
 <div class="diferenciais-bg">
 
     <section class="section" id="diferenciais">
@@ -994,7 +1044,9 @@
 
         </div>
 
+
         <div class="diferenciais-grid">
+
 
             <div class="diferencial-card">
 
@@ -1008,11 +1060,12 @@
 
                 <p class="diferencial-texto">
                     Um loteamento organizado e planejado para oferecer
-                    espaços bem distribuídos e uma estrutura urbana pensada
-                    para o futuro.
+                    espaços bem distribuídos e uma estrutura urbana
+                    pensada para o futuro.
                 </p>
 
             </div>
+
 
             <div class="diferencial-card">
 
@@ -1026,10 +1079,11 @@
 
                 <p class="diferencial-texto">
                     Situado em uma região estratégica de Estrela do Norte,
-                    com fácil acesso e grande potencial de desenvolvimento.
+                    com acesso e potencial de desenvolvimento.
                 </p>
 
             </div>
+
 
             <div class="diferencial-card">
 
@@ -1043,11 +1097,11 @@
 
                 <p class="diferencial-texto">
                     Um projeto inspirado na beleza dos Ipês, trazendo
-                    identidade e valorizando a integração entre urbanização
-                    e natureza.
+                    identidade e integração entre urbanização e natureza.
                 </p>
 
             </div>
+
 
             <div class="diferencial-card">
 
@@ -1066,6 +1120,7 @@
 
             </div>
 
+
             <div class="diferencial-card">
 
                 <div class="diferencial-icone">
@@ -1083,13 +1138,16 @@
 
             </div>
 
+
         </div>
 
     </section>
 
 </div>
 
-<!-- GALERIA -->
+
+<!-- ──── GALERIA ──── -->
+
 <section class="section" id="galeria">
 
     <p class="section-tag">
@@ -1102,43 +1160,60 @@
 
     <div class="section-line"></div>
 
+
     <div class="galeria-grid">
 
         <div class="galeria-item">
+
             <img
                 src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=900"
                 alt="Vista panorâmica">
+
         </div>
 
+
         <div class="galeria-item">
+
             <img
                 src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700"
                 alt="Residência">
+
         </div>
 
+
         <div class="galeria-item">
+
             <img
                 src="https://images.unsplash.com/photo-1448630360428-65456885c650?w=700"
                 alt="Área verde">
+
         </div>
 
+
         <div class="galeria-item">
+
             <img
                 src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=700"
                 alt="Paisagem">
+
         </div>
 
+
         <div class="galeria-item">
+
             <img
                 src="https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=700"
                 alt="Terreno">
+
         </div>
 
     </div>
 
 </section>
 
-<!-- LOCALIZAÇÃO -->
+
+<!-- ──── LOCALIZAÇÃO ──── -->
+
 <div class="diferenciais-bg">
 
     <section class="section" id="localizacao">
@@ -1165,6 +1240,7 @@
 
             </div>
 
+
             <div class="localizacao-mapa">
 
                 <iframe
@@ -1181,10 +1257,13 @@
 
 </div>
 
-<!-- CONTATO -->
+
+<!-- ──── CONTATO ──── -->
+
 <section class="contato-section" id="contato">
 
     <div class="contato-inner">
+
 
         <div class="contato-info">
 
@@ -1199,9 +1278,11 @@
             <div class="section-line"></div>
 
             <p class="section-text">
-                Entre em contato conosco para conhecer melhor o Alto dos
-                Ipês e receber informações sobre os lotes disponíveis.
+                Nossa equipe está pronta para apresentar as opções
+                disponíveis e ajudar você a encontrar o lote ideal
+                para o seu projeto.
             </p>
+
 
             <div style="margin-top: 40px;">
 
@@ -1224,6 +1305,7 @@
                     </div>
 
                 </div>
+
 
                 <div class="contato-detalhe">
 
@@ -1249,22 +1331,26 @@
 
         </div>
 
+
         <div class="form-wrapper">
 
             <div class="form-title">
                 Entre em contato
             </div>
 
-            <p style="font-size: 15px; color: var(--texto-medio); line-height: 1.8; margin-bottom: 32px; font-weight: 300;">
+            <p
+                style="font-size: 15px; color: var(--texto-medio); line-height: 1.8; margin-bottom: 32px; font-weight: 300;">
 
-                Clique no botão abaixo e fale diretamente pelo WhatsApp.
-                É rápido, fácil e sem compromisso!
+                Clique no botão abaixo e fale diretamente com nosso
+                consultor pelo WhatsApp. É rápido, fácil e sem compromisso!
 
             </p>
+
 
             <a
                 href="https://wa.me/5562981205920?text=Olá!%20Tenho%20interesse%20no%20loteamento%20Alto%20dos%20Ipês%20e%20gostaria%20de%20mais%20informações."
                 target="_blank"
+                rel="noopener noreferrer"
                 class="btn-form">
 
                 Quer se Cadastrar? 💬 Falar no WhatsApp →
@@ -1277,10 +1363,13 @@
 
 </section>
 
-<!-- FOOTER -->
+
+<!-- ──── FOOTER ──── -->
+
 <footer>
 
     <div class="footer-inner">
+
 
         <div>
 
@@ -1289,11 +1378,12 @@
             </div>
 
             <p class="footer-desc">
-                Um loteamento planejado para quem deseja construir o futuro
-                em Estrela do Norte, Goiás.
+                Empreendimento imobiliário planejado para quem deseja
+                construir seu futuro em Estrela do Norte, Goiás.
             </p>
 
         </div>
+
 
         <div class="footer-col">
 
@@ -1337,6 +1427,7 @@
 
         </div>
 
+
         <div class="footer-col">
 
             <h4>
@@ -1362,6 +1453,7 @@
         </div>
 
     </div>
+
 
     <div class="footer-bottom">
 
