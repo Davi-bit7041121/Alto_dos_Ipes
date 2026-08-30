@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alto dos Ipês — Loteamento Premium</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com" rel="stylesheet">
     
-    <!-- ──── ÍCONE DA ABA DO NAVEGADOR (FAVICON) ──── -->
+    <!-- ──── ADICIONADO: SEU FAVICON NA ABA DO NAVEGADOR ──── -->
     <link rel="icon" type="image/png" href="imagens/logo-alto-dos-ipes.png">
 
     <style>
@@ -40,7 +40,7 @@
             overflow-x: hidden;
         }
 
-        /* ──── NAVBAR ──── */
+        /* ──── NAVBAR ORIGINAL PRESERVADA ──── */
         nav {
             position: fixed;
             top: 0;
@@ -50,16 +50,23 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 15px 60px;
+            padding: 20px 60px;
             background: rgba(26, 61, 43, 0.96);
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(201, 168, 76, 0.3);
         }
 
-        .nav-logo img {
-            height: 45px;
-            width: auto;
-            display: block;
+        .nav-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--branco);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .nav-logo span {
+            color: var(--dourado);
         }
 
         .nav-links {
@@ -109,7 +116,7 @@
         .hero-bg {
             position: absolute;
             inset: 0;
-            background-image: url('https://i.ibb.co/JV7ZZKD/Whats-App-Image-2026-05-28-at-18-31-55.jpg');
+            background-image: url('https://ibb.co');
             background-size: cover;
             background-position: center;
             transform: scale(1.05);
@@ -267,7 +274,7 @@
             transform: scaleX(-1);
         }
 
-        /* ──── CORREÇÃO DO SCROLL INDICATOR ──── */
+        /* ──── CORRIGIDO: CSS DO SCROLL INDICATOR FECHADO CORRETAMENTE ──── */
         .scroll-indicator {
             position: absolute;
             bottom: 40px;
@@ -299,12 +306,11 @@
 </head>
 <body>
 
-    <!-- ──── NAVBAR ──── -->
+    <!-- ──── NAVBAR ORIGINAL CONFORME VOCÊ PEDIU ──── -->
     <nav>
-        <a href="#" class="nav-logo">
-            <!-- Insira aqui o caminho para a sua logo principal (de preferência transparente) -->
-            <img src="caminho-da-sua-logo-principal.png" alt="Alto dos Ipês Loteamento Premium">
-        </a>
+        <div class="nav-logo">
+            Alto dos <span>Ipês</span>
+        </div>
         <ul class="nav-links">
             <li><a href="#projeto">O Projeto</a></li>
             <li><a href="#lazer">Lazer</a></li>
